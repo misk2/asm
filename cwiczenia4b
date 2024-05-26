@@ -35,3 +35,4 @@ ret
 msg:
 .asciz "wynik = %i\n"
 
+#zad dom - wykorzystac ten program i przerobic go na funkcje fibonacciego -fn = 1 dla n =1 oraz f(n-1) + f(n-2) dla n>2
