@@ -1,0 +1,29 @@
+.intel_syntax noprefix
+.global main
+.text
+main:
+mov eax, [esp+8]
+mov eax, [eax+4]
+push eax
+call atoi
+add esp,4
+#add eax,eax
+push eax
+call f
+add esp,4
+push eax
+mov eax,OFFSET msg
+push eax
+call printf
+add esp,8
+mov eax,0
+ret
+f:
+mov eax,[esp+4]
+add eax,eax
+add eax,eax
+ret
+.data
+msg:
+.asciz "wynik = %i\n"
+
